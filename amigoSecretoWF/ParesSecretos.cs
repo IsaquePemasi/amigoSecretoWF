@@ -24,9 +24,7 @@ namespace amigoSecretoWF
             nome1 = new ColumnHeader();
             nome2 = new ColumnHeader();
             SuspendLayout();
-            // 
             // listViewSecreto
-            // 
             listViewSecreto.Columns.AddRange(new ColumnHeader[] { nome1, nome2 });
             listViewSecreto.Location = new Point(28, 34);
             listViewSecreto.Name = "listViewSecreto";
@@ -35,19 +33,13 @@ namespace amigoSecretoWF
             listViewSecreto.UseCompatibleStateImageBehavior = false;
             listViewSecreto.View = View.Details;
             listViewSecreto.SelectedIndexChanged += listViewSecreto_SelectedIndexChanged;
-            // 
             // nome1
-            // 
-            nome1.Text = "Esse";
+            nome1.Text = "Amigo 1";
             nome1.Width = 200;
-            // 
             // nome2
-            // 
-            nome2.Text = "Pegou esse";
+            nome2.Text = "Amigo 2";
             nome2.Width = 200;
-            // 
             // ParesSecretos
-            // 
             ClientSize = new Size(480, 346);
             Controls.Add(listViewSecreto);
             Name = "ParesSecretos";
@@ -62,7 +54,6 @@ namespace amigoSecretoWF
         {
 
         }
-
         private ListView listViewSecreto;
         private ColumnHeader nome1;
         private ColumnHeader nome2;
