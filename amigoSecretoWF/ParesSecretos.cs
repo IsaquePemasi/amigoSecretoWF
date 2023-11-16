@@ -20,12 +20,17 @@ namespace amigoSecretoWF
 
         private void InitializeComponent()
         {
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(ParesSecretos));
             listViewSecreto = new ListView();
             nome1 = new ColumnHeader();
             nome2 = new ColumnHeader();
             SuspendLayout();
+            // 
             // listViewSecreto
+            // 
+            listViewSecreto.BackColor = Color.Silver;
             listViewSecreto.Columns.AddRange(new ColumnHeader[] { nome1, nome2 });
+            listViewSecreto.Font = new Font("Old English Text MT", 9F, FontStyle.Italic, GraphicsUnit.Point);
             listViewSecreto.Location = new Point(28, 34);
             listViewSecreto.Name = "listViewSecreto";
             listViewSecreto.Size = new Size(425, 279);
@@ -33,13 +38,21 @@ namespace amigoSecretoWF
             listViewSecreto.UseCompatibleStateImageBehavior = false;
             listViewSecreto.View = View.Details;
             listViewSecreto.SelectedIndexChanged += listViewSecreto_SelectedIndexChanged;
+            // 
             // nome1
+            // 
             nome1.Text = "Amigo 1";
             nome1.Width = 200;
+            // 
             // nome2
+            // 
             nome2.Text = "Amigo 2";
             nome2.Width = 200;
+            // 
             // ParesSecretos
+            // 
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(480, 346);
             Controls.Add(listViewSecreto);
             Name = "ParesSecretos";
