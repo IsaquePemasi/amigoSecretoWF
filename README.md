@@ -9,4 +9,4 @@ Desafio: Windows Form + Listas + Arquivo Tendo como base o programa do Amigo Sec
          4) arquivo secretos.csv (com nome de um amigo e seu respectivo amigo secreto, separados por ;)
              Gustavo Castagna;gus.castagna@ufn.edu.br;Alexandre Nonato;alex.nonato@ufn.edu.br
 
-<img src ="./img/Captura de tela 2023-11-16 161050.png">
+<img src ="./img/Captura de tela 2023-11-16 170402.png">
