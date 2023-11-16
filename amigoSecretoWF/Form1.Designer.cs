@@ -202,6 +202,7 @@
             Controls.Add(button1);
             Font = new Font("Old English Text MT", 9F, FontStyle.Italic, GraphicsUnit.Point);
             ForeColor = Color.Transparent;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Amigo Oculto";
             Load += Form1_Load;

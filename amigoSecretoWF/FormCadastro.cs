@@ -80,6 +80,7 @@ namespace amigoSecretoWF
             // 
             // textBoxNome
             // 
+            textBoxNome.Anchor = AnchorStyles.None;
             textBoxNome.Font = new Font("Old English Text MT", 9F, FontStyle.Italic, GraphicsUnit.Point);
             textBoxNome.Location = new Point(12, 37);
             textBoxNome.Name = "textBoxNome";
@@ -88,6 +89,7 @@ namespace amigoSecretoWF
             // 
             // textBoxEmail
             // 
+            textBoxEmail.Anchor = AnchorStyles.None;
             textBoxEmail.Font = new Font("Old English Text MT", 9F, FontStyle.Italic, GraphicsUnit.Point);
             textBoxEmail.Location = new Point(14, 102);
             textBoxEmail.Name = "textBoxEmail";
@@ -97,6 +99,7 @@ namespace amigoSecretoWF
             // 
             // buttonCadastrarAmigo
             // 
+            buttonCadastrarAmigo.Anchor = AnchorStyles.None;
             buttonCadastrarAmigo.Font = new Font("Old English Text MT", 9F, FontStyle.Italic, GraphicsUnit.Point);
             buttonCadastrarAmigo.Location = new Point(177, 187);
             buttonCadastrarAmigo.Name = "buttonCadastrarAmigo";
@@ -108,6 +111,7 @@ namespace amigoSecretoWF
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Old English Text MT", 9F, FontStyle.Italic, GraphicsUnit.Point);
@@ -120,6 +124,7 @@ namespace amigoSecretoWF
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Old English Text MT", 9F, FontStyle.Italic, GraphicsUnit.Point);
@@ -141,7 +146,9 @@ namespace amigoSecretoWF
             Controls.Add(buttonCadastrarAmigo);
             Controls.Add(textBoxEmail);
             Controls.Add(textBoxNome);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormCadastro";
+            Text = "Cadastrar";
             Load += FormCadastro_Load;
             ResumeLayout(false);
             PerformLayout();

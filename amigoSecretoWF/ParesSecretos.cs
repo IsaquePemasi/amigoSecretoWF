@@ -28,6 +28,7 @@ namespace amigoSecretoWF
             // 
             // listViewSecreto
             // 
+            listViewSecreto.Anchor = AnchorStyles.None;
             listViewSecreto.BackColor = Color.Silver;
             listViewSecreto.Columns.AddRange(new ColumnHeader[] { nome1, nome2 });
             listViewSecreto.Font = new Font("Old English Text MT", 9F, FontStyle.Italic, GraphicsUnit.Point);
@@ -55,7 +56,9 @@ namespace amigoSecretoWF
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(480, 346);
             Controls.Add(listViewSecreto);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ParesSecretos";
+            Text = "Visualizar";
             ResumeLayout(false);
         }
 
