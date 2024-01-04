@@ -10,3 +10,5 @@ Desafio: Windows Form + Listas + Arquivo Tendo como base o programa do Amigo Sec
              Gustavo Castagna;gus.castagna@ufn.edu.br;Alexandre Nonato;alex.nonato@ufn.edu.br
 
 <img src ="./img/Captura de tela 2023-11-16 170402.png">
+<h2 align="center">Autor</h2>
+<a href="https://github.com/IsaquePemasi/"><img src="https://avatars.githubusercontent.com/u/76749511?v=4" width=115></a>
